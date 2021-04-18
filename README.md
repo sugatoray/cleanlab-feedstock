@@ -5,9 +5,13 @@ Home: https://github.com/cgnorthcutt/cleanlab
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cleanlab-feedstock/blob/master/LICENSE.txt)
 
 Summary: Find label errors in datasets, weak supervision, and learning with noisy labels. Works for all datasets and models.
+
+Development: https://github.com/cgnorthcutt/cleanlab
+
+Documentation: https://pypi.org/project/cleanlab/#description
 
 cleanlab is a machine learning python package for learning with noisy labels and finding label errors in datasets.
 cleanlab CLEANs LABels. It is powered by the theory of confident learning. Using the confidentlearning-reproduce
@@ -41,6 +45,7 @@ Installing `cleanlab` from the `conda-forge` channel can be achieved by adding `
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `cleanlab` can be installed with:
@@ -111,9 +116,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
